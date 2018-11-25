@@ -22,14 +22,20 @@
 		<div class="starter-template">
 		<h1>Hello !!</h1>
 		<h1>Welcome to Library App !!</h1>
-			<h1>Books Available Currently</h1>
-			<table border="0">
+			<h1>Books Available In Library</h1>
+			<table border="3" style="width:500px;text-align=center;" >
+			<tr>
+					<td>S.No</td>
+					<td>Book Name</td>
+					<td>Author Name</td>
+      				<td>Availability Status</td>
+    			</tr>
 			<c:forEach items="${Books}" var="book">
 				<tr>
 					<td><c:out value="${book.getId()}" /></td>
 					<td><c:out value="${book.getName()}" /></td>
 					<td><c:out value="${book.getAuthor()}" /></td>
-      				<td><c:out value="${book.getPublishedDate()}" /></td>
+      				<td><c:out value="${book.getAvailability()}" /></td>
     			</tr>
 			</c:forEach>
 			</table>

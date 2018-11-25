@@ -20,9 +20,6 @@ public class BookController {
 	public String welcome(Map<String, Object> model) 
 	{
 		List<Books> books = service.getAllBooks();
-		for (Books books2 : books) {
-			System.out.println(books2.getId());
-		}
 		model.put("Books", books);
 		return "welcome";
 	}

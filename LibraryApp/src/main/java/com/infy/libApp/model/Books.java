@@ -1,6 +1,5 @@
 package com.infy.libApp.model;
 
-import java.sql.Date;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -11,7 +10,8 @@ public class Books
 	private int id;
 	private String name;
 	private String author;
-	private Date publishedDate;
+	private String availability;
+	
 	public String getName() {
 		return name;
 	}
@@ -24,18 +24,18 @@ public class Books
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public Date getPublishedDate() {
-		return publishedDate;
-	}
-	public void setPublishedDate(Date publishedDate) {
-		this.publishedDate = publishedDate;
-	}
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int bookId) {
 		this.id = bookId;
 	}
-	
+	public String getAvailability() {
+		return availability;
+	}
+	public void setAvailability(String availability) {
+		this.availability = availability;
+	}
 	
 }
