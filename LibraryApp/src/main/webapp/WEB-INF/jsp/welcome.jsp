@@ -23,7 +23,16 @@
 		<h1>Hello !!</h1>
 		<h1>Welcome to Library App !!</h1>
 			<h1>Books Available Currently</h1>
-			<h2>Message: ${Books}</h2>
+			<table border="0">
+			<c:forEach items="${Books}" var="book">
+				<tr>
+					<td><c:out value="${book.getId()}" /></td>
+					<td><c:out value="${book.getName()}" /></td>
+					<td><c:out value="${book.getAuthor()}" /></td>
+      				<td><c:out value="${book.getPublishedDate()}" /></td>
+    			</tr>
+			</c:forEach>
+			</table>
 		</div>
 
 	</div>

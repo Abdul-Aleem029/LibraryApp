@@ -1,17 +1,14 @@
 package com.infy.libApp.model;
 
-import java.util.Date;
-
+import java.sql.Date;
 import javax.persistence.Entity;
-import javax.persistence.Column;
 import javax.persistence.Id;
 
 @Entity
 public class Books 
 {
 	@Id
-	@Column(name="id")
-	private int bookId;
+	private int id;
 	private String name;
 	private String author;
 	private Date publishedDate;
@@ -32,6 +29,12 @@ public class Books
 	}
 	public void setPublishedDate(Date publishedDate) {
 		this.publishedDate = publishedDate;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int bookId) {
+		this.id = bookId;
 	}
 	
 	

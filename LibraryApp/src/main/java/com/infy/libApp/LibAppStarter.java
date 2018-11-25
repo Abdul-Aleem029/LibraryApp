@@ -12,11 +12,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EntityScan("com.infy.libApp.model")
 public class LibAppStarter extends SpringBootServletInitializer {
 
-
-	
-	
-	
-
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(LibAppStarter.class, args);
 	}
