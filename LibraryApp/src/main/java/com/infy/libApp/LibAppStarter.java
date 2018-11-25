@@ -1,26 +1,20 @@
-package com.infy.libApp.starter;
+package com.infy.libApp;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-import com.infy.libApp.dao.BookRepository;
-
-import javax.sql.DataSource;
 
 
 @SpringBootApplication(scanBasePackages = "com.infy.libApp.*")
+@EnableJpaRepositories(basePackages= "com.infy.libApp.dao")
 @EntityScan("com.infy.libApp.model")
 public class LibAppStarter extends SpringBootServletInitializer {
 
-	 @Autowired
-	    DataSource dataSource;
-	 
-	    @Autowired
-	    BookRepository bookRepository;
+
 	
 	
 	@Override
