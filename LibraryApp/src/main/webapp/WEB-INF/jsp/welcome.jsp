@@ -20,7 +20,9 @@
 	<div class="container">
 
 		<div class="starter-template">
-			<h1>Spring Boot Web JSP Example</h1>
+		<h1>Hello !!</h1>
+		<h1>Welcome to Library App !!</h1>
+			<h1>Books Available Currently</h1>
 			<h2>Message: ${Books}</h2>
 		</div>
 
