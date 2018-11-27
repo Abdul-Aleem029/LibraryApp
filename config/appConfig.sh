@@ -89,7 +89,7 @@ echo "Starting Maven Build"
 
 cd $pomxml_path
 
-mvn clean install
+mvn clean package
 
 sleep 10
 
