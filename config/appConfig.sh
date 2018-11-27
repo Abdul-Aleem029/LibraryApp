@@ -105,7 +105,7 @@ docker build -t $dockerimage_name$version .
 
 sleep 10
 
-echo "Running the Docker Image and making Services Up - You can aceess the application with http://your_vm_ip:8080/"
+echo "Running the Docker Image and making Services Up - You can aceess the application with http://Appvm_ip:8080/"
 
 sleep 2
 nohup docker run -i --rm -p 8080:8080 $dockerimage_name$version &
