@@ -12,6 +12,15 @@ public class Books
 	private String author;
 	private String availability;
 	
+	
+	
+	public Books(int id, String name, String author, String availability) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.author = author;
+		this.availability = availability;
+	}
 	public String getName() {
 		return name;
 	}
