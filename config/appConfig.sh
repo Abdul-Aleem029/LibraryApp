@@ -58,9 +58,7 @@ yum -y install telnet
 
 sleep 10
 
-#Ensure to clear the existing files from the Clone Path
-echo "Clear the existing files from the Vignesh_Assessment"
-sleep 2
+sleep 5
 
 echo "Path in which the Master Branch will be Cloned is $clone_path"
 rm -rf $clone_path
