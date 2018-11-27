@@ -26,6 +26,7 @@ public class LibAppStarter extends SpringBootServletInitializer {
 		return strings ->{
 			bookRepository.save(new Books(1, "Jungle Book", "Rudyard Kipling", "Available"));
 			bookRepository.save(new Books(2, "Lion King", "Chris Sanders", "Available"));
+			bookRepository.save(new Books(3, "Harry Potter", "J K Rowling", "Available"));
 		};
 	}
 

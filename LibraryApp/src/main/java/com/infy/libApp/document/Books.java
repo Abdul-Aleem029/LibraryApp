@@ -21,6 +21,7 @@ public class Books
 		this.author = author;
 		this.availability = availability;
 	}
+	
 	public String getName() {
 		return name;
 	}
