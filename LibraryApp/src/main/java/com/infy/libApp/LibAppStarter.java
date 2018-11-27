@@ -4,12 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 
-@EnableJpaRepositories(basePackages= "com.infy.libApp.dao")
+@EnableMongoRepositories(basePackages= "com.infy.libApp.dao")
 @SpringBootApplication(scanBasePackages = "com.infy.libApp.*")
-@EntityScan("com.infy.libApp.model")
+@EntityScan("com.infy.libApp.document")
 public class LibAppStarter extends SpringBootServletInitializer {
 
 	public static void main(String[] args) throws Exception {

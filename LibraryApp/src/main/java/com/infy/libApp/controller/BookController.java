@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.infy.libApp.model.Books;
+import com.infy.libApp.document.Books;
 import com.infy.libApp.service.BookService;
 
 @Controller

@@ -1,9 +1,9 @@
 package com.infy.libApp.dao;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.infy.libApp.model.Books;
+import com.infy.libApp.document.Books;
 
-public interface BookRepository extends JpaRepository<Books, Integer>{
+public interface BookRepository extends MongoRepository<Books, Integer>{
 
 }
